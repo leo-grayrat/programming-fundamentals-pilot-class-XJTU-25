@@ -1,0 +1,1 @@
+gcc basic.c  general.c  kblas.c  main.c  huawei.c neon.c -o matrix     -O2 -march=armv8-a     -I/usr/local/kml/include     -I/usr/local/kml/include/kspblas     -L/usr/local/kml/lib/neon/kblas/nolocking     -L/usr/local/kml/lib/neon/kspblas/single     -lkblas -lkspblas -lgomp -lm     -Wl,-rpath=/usr/local/kml/lib/neon/kblas/nolocking:/usr/local/kml/lib/neon/kspblas/single
